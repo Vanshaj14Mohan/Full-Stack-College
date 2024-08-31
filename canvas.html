@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" height="500px" width="400px" style="background-color:peachpuff; border:5px solid black"></canvas>
+    <script>
+        const myCanvas = document.getElementById("myCanvas");
+        // alert(myCanvas);
+        var ctx = myCanvas.getContext("2d");
+        // ctx.beginPath();
+        ctx.moveTo(200,200);
+        ctx.lineTo(200,300);
+        // ctx.moveTo(200,200);
+        ctx.lineTo(300,300);
+        ctx.lineTo(300,200);
+        ctx.lineTo(200,200);
+
+        // ctx.moveTo(200,200);
+        // ctx.lineTo(140,140);
+        // ctx.moveTo(200,200);
+        ctx.stroke();
+
+        //for circles
+        ctx.beginPath();
+        ctx.arc(100,200,60,0,7);
+        ctx.fillStyle="green";
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(100,200,50,0,7);
+        ctx.fillStyle="yellow";
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(100,200,40,0,7);
+        ctx.fillStyle="red";
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath(); 
+        ctx.arc(100,200,30,0,7);
+        ctx.fillStyle="purple";
+        ctx.fill();
+        ctx.stroke();
+    </script>
+</body>
+</html>

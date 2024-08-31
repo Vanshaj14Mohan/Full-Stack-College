@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Task</title>
+</head>
+<body style="background-color: peachpuff;">
+  <h2 style="padding-left: 100px;"><b><u>Canvas Task</u></b></h2>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+      
+        let birdWingAngle = 0;
+        let doorOpen = false;
+      
+        function drawHouse() {
+          ctx.fillStyle = 'rgba(200, 0, 0, 0.5)';
+          ctx.fillRect(50, 150, 200, 200); // body of the house
+          ctx.fillStyle = 'rgba(0, 0, 255, 0.5)';
+          ctx.fillRect(105, 100, 50, 50); // roof of the house
+          ctx.fillStyle = 'rgba(255, 255, 0, 0.5)';
+        }
+
+      function drawBird() {
+    ctx.fillStyle = 'rgba(0, 255, 0, 0.5)';
+    ctx.beginPath();
+    ctx.arc(100, 50, 20, 0, Math.PI * 2); // body of the bird
+    ctx.fill();
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+    ctx.beginPath();
+    ctx.arc(90, 40, 5, 0, Math.PI * 2); // left eye of the bird
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(110, 40, 5, 0, Math.PI * 2); // right eye of the bird
+    ctx.fill();
+    ctx.fillStyle = 'rgba(255, 255, 0, 0.5)';
+    ctx.beginPath();
+    ctx.moveTo(100, 60);
+    ctx.lineTo(100, 80);
+    ctx.lineTo(90, 70);
+    ctx.fill(); // beak of the bird
+    ctx.fillStyle = 'rgba(0, 255, 0, 0.5)';
+  }
+
+  function update() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawHouse();
+    drawBird();
+    birdWingAngle += 0.1;
+    if (Math.random() < 0.1) {
+      doorOpen = !doorOpen;
+    }
+  }
+
+  setInterval(update, 1000 / 60);
+</script>
+</body>
+</html>

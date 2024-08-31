@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pi id="demo"></p>
+    <!-- <script>
+        let student = [{
+            name: "Aditi",
+            lastname: "Sharma",
+            email: "aditi@gamil.com"
+        },
+        {
+            name: "Abhay",
+            lastname: "Sharma",
+            email: "abhay@gamil.com"
+        }];
+        //document.getElementById("demo").innerHTML = student.name; //or student["name"]
+        document.getElementById("demo").innerHTML = student[1]["name"]; //or student["name"]
+    </script> -->
+
+    <!-- now using json -->
+    <script>
+        let student = `[{
+            "name": "Aditi",
+            "lastname": "Sharma",
+            "email": "aditi@gamil.com"
+        },
+        {
+            "name": "Abhay",
+            "lastname": "Sharma",
+            "email": "abhay@gamil.com"
+        }]`;
+        alert(typeof student);
+
+        let studentdata = JSON.parse(student);
+        alert(typeof studentdata);
+        //document.getElementById("demo").innerHTML = student.name; //or student["name"]
+        document.getElementById("demo").innerHTML = studentdata[1]["name"]; //or student["name"]
+    </script>
+    
+</body>
+</html>
