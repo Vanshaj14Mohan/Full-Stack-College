@@ -1,0 +1,62 @@
+[
+    {
+        "firstName": "Aman",
+        "lastName": "Mathur",
+        "course": "BSc Computer Science",
+        "address": {
+            "city": "New York",
+            "state": "NY",
+            "postalCode": "10001"
+        },
+        "phoneNo": "123-456-7890",
+        "emailId": "aman.mathur@example.com"
+    },
+    {
+        "firstName": "Jay",
+        "lastName": "Singh",
+        "course": "MCA",
+        "address": {
+            "city": "Los Angeles",
+            "state": "CA",
+            "postalCode": "90001"
+        },
+        "phoneNo": "987-654-3210",
+        "emailId": "jay.singh@example.com"
+    },
+    {
+        "firstName": "Ram",
+        "lastName": "Kumar",
+        "course": "BEng Mechanical Engineering",
+        "address": {
+            "city": "Chicago",
+            "state": "IL",
+            "postalCode": "60001"
+        },
+        "phoneNo": "555-123-4567",
+        "emailId": "ram.kumar@example.com"
+    },
+    {
+        "firstName": "Raj",
+        "lastName": "Malhotra",
+        "course": "BSc Biology",
+        "address": {
+            "city": "Houston",
+            "state": "TX",
+            "postalCode": "77001"
+        },
+        "phoneNo": "901-234-5678",
+        "emailId": "raj.mah@example.com"
+    },
+    {
+        "firstName": "Rahul",
+        "lastName": "Dev",
+        "course": "BA Business Administration",
+        "address": {
+            "city": "Philadelphia",
+            "state": "PA",
+            "postalCode": "19001"
+        },
+        "phoneNo": "111-222-3333",
+        "emailId": "rahul.dev@example.com"
+    }
+]
