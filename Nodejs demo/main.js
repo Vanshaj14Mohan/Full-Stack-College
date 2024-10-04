@@ -24,6 +24,15 @@ const server = http.createServer((req, res) => {
       res.writeHead(200, { 'Content-Type': 'text/plain' });
       res.end('This is the contact page!');
       break;
+    case "/register":
+      if(req.method == "GET"){
+        res.end(`<h1>Enter Registration Details..</h1`);
+        break;
+      }
+      if(req.method == "POST"){
+        res.end(`<h1>Enter Registration Details..</h1`);
+        break;
+      }
     default:
       res.writeHead(404, { 'Content-Type': 'text/plain' });
       res.end('Not found!');
