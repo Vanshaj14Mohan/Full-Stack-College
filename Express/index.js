@@ -9,13 +9,6 @@ app.get("/", (req,res)=>{
 });
 
 app.get("/about", (req,res)=>{
-    // const name = req.query.name;
-    // if(name){
-    //     res.send(`About ${name}`)
-    // }
-    // else{
-    //     res.send("Cannot fetch name");
-    // }
     res.send(req.query.name + "Done now");
 });
 
